@@ -1,2 +1,2 @@
 # LumberLogistics
-LumberLogistics to aplikacja w języku C#, symulująca system zarządzania tartakiem, umożliwiająca śledzenie i optymalizację procesu przetwarzania drewna, zarządzanie pracownikami oraz efektywne zarządzanie zasobami tartaku.
+LumberLogistics is an application in C# that simulates a sawmill management system, enabling tracking and optimization of the wood processing process, employee management and effective management of sawmill resources.

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="LumberLogistics.Pages.Login">
+    <Position X="13.5" Y="2.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAQAiAAgIAAAAAAAAAAAAAAAAAAACAAgA=</HashCode>
+      <FileName>Pages\Login.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LumberLogistics.Pages.Landing">
+    <Position X="9.5" Y="2.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAUAAAAAAAAAAAAgAAAAAAAAIBAQAAAAwA=</HashCode>
+      <FileName>Pages\Landing.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Controls.Page" Collapsed="true">
+    <Position X="14.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LumberLogistics.Pages.Informacje">
+    <Position X="7.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAABAAAAAAwA=</HashCode>
+      <FileName>Pages\Informacje.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LumberLogistics.Pages.Magazyn">
+    <Position X="17.75" Y="2.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAABAAAAAAwA=</HashCode>
+      <FileName>Pages\Magazyn.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LumberLogistics.Pages.MainSpace">
+    <Position X="21.5" Y="2.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAUAAABAAAQAAAAAAQAAAAAAAAAAAQAAQA=</HashCode>
+      <FileName>Pages\MainSpace.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LumberLogistics.Pages.User">
+    <Position X="11.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAIAAAAAAAAAAAAIAAAAAAAAAACAAIAAAAAA=</HashCode>
+      <FileName>Pages\UserArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LumberLogistics.Pages.Query">
+    <Position X="18" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Components\QueryMenager\Query.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LumberLogistics.Components.QueryManager.QueryManager">
+    <Position X="15.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\QueryMenager\QuaryMenager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LumberLogistics.Pages.DataLoader">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Components\DataLoader\DataLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="System.Windows.Markup.IComponentConnector" Collapsed="true">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

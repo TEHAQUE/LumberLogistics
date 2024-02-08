@@ -1,0 +1,31 @@
+﻿<Page x:Class="LumberLogistics.Pages.Informacje"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LumberLogistics.Pages"
+      mc:Ignorable="d" 
+      Title="Informacje" Width="1400">
+
+    <Grid Background="#FF095D80">
+        <Rectangle HorizontalAlignment="Center" Margin="0,173,0,0" Stroke="Black" VerticalAlignment="Top" Fill="#FF044B9A"/>
+        <DataGrid Name="stat1" Margin="15,182,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="228" Width="717"/>
+        <Rectangle Fill="#FF19396F" Margin="0,100,0,532"/>
+        <TextBlock HorizontalAlignment="Left" Height="63" Margin="310,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" FontSize="36" Text="Informacje" Foreground="White"/>
+        <Button Click="Back" Content="Wróć" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Height="34" Width="114"/>
+        <Button Content="Odśwież" Click="RefreshBtn" HorizontalAlignment="Left" Margin="137,117,0,0" VerticalAlignment="Top" Height="34" Width="134"/>
+        <Rectangle Grid.Row="0" Style="{StaticResource TopBar}" Margin="0,0,0,600"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="LumberLogistic" VerticalAlignment="Top" FontSize="44" FontFamily="Segoe WP Light" Height="80" Width="300" Margin="10,10,0,0" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock x:Name="ImieNazwiskoTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Width="268" Height="48" Background="{x:Null}" FontSize="36" Margin="0,2,30,0" Foreground="White"/>
+        <TextBlock x:Name="StanowiskoTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Width="268" Height="46" Background="{x:Null}" FontSize="24" Margin="0,50,30,0" Foreground="White"/>
+        <DataGrid Name="stat2"  Margin="737,182,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="228" Width="653"/>
+        <DataGrid Name="stat3" Margin="15,415,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="275" Width="356"/>
+        <DataGrid Name="stat4" Margin="934,415,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="275" Width="456"/>
+        <DataGrid Name="stat5" Margin="376,415,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="275" Width="553"/>
+
+    </Grid>
+</Page>

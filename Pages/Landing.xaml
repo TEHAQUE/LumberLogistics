@@ -1,0 +1,72 @@
+﻿<Page x:Class="LumberLogistics.Pages.Landing"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LumberLogistics.Pages"
+              Title="Landing">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.7,0">
+            <GradientStop Color="#FF003344"/>
+            <GradientStop Color="#FF071338" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="291*"/>
+            <ColumnDefinition Width="229*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Rectangle
+        Grid.Column="0"
+        Grid.Row="1"
+        Fill="#FF255096" Opacity="0.395" Grid.RowSpan="3" />
+
+        <Border Grid.Row="1" Grid.Column="1" Background="#FF337394" Margin="20,20,10,0" CornerRadius="15" ClipToBounds="True">
+            <DataGrid Name="stat1" Margin="0,63,0,19" Background="#FF337394" />
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2" Background="#FF337394" Margin="10,20,10,0" CornerRadius="15" ClipToBounds="True">
+            <DataGrid Name="stat2" Margin="0,62,0,20" Background="#FF337394"/>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="3" Background="#FF337394" Margin="10,20,20,0" CornerRadius="15">
+            <DataGrid Name="stat3" Margin="0,60,0,20" Background="#FF337394"/>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="1" Background="#FF337394" Margin="20,20,10,20" CornerRadius="15"></Border>
+        <Border Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Background="#FF337394" Margin="10,20,20,20" CornerRadius="15" Grid.ColumnSpan="2">
+            <DataGrid Name="stat4" Margin="0,38,0,0" Background="#FF337394"/>
+        </Border>
+        <Rectangle Grid.Row="0" Grid.ColumnSpan="4" Style="{StaticResource TopBar}"/>
+        <WrapPanel Background="Transparent" Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="300" Height="478" Margin="0,2,0,0" Grid.RowSpan="3">
+            <Button Click="LoadMain" Content="Zarządzanie" Height="70" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" Background="#FF465EC1" Foreground="White" FontFamily="Tw Cen MT Condensed Extra Bold" BorderBrush="#FF465EC1"/>
+            <Button Click="Magazyn" Content="Magazyn"  Height="70" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" Background="#FF465EC1" Foreground="White" FontFamily="Tw Cen MT Condensed Extra Bold" BorderBrush="#FF465EC1"/>
+            <Button Click="Informacje" Content="Informacje"  Height="70" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" Background="#FF465EC1" Foreground="White" FontFamily="Tw Cen MT Condensed Extra Bold" BorderBrush="#FF465EC1"/>
+
+
+        </WrapPanel>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="LumberLogistic" VerticalAlignment="Center" FontSize="44" FontFamily="Segoe WP Light" Height="80" Width="300" Grid.ColumnSpan="2" Margin="10,0,0,0" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock x:Name="ImieNazwiskoTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Width="268" Height="48" Grid.Column="2" Background="{x:Null}" FontSize="36" Margin="0,2,30,0" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="StanowiskoTextBox" HorizontalAlignment="Right" VerticalAlignment="Top" Width="268" Height="46" Grid.Column="2" Background="{x:Null}" FontSize="24" Margin="0,50,30,0" Foreground="White" Grid.ColumnSpan="2"/>
+
+
+
+        <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="336" RenderTransformOrigin="4.816,-1.39" Grid.Column="2" FontSize="20" Foreground="White"><Run Text="Najwięcej procesów"/><Run Language="pl-pl" Text=" magazynowych"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,30,20,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="256" RenderTransformOrigin="4.816,-1.39" Grid.Column="2" FontSize="20" Grid.ColumnSpan="2" Foreground="White"><Run Text="Najwięcej procesów"/><Run Text=" ob"/><Run Text="r"/><Run Text="ó"/><Run Language="pl-pl" Text="b"/><Run Text="ki"/><Run Text=":"/><Run Text=" "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,24,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Zamówienia:" VerticalAlignment="Top" Height="40" Width="190" Grid.Column="2" FontSize="20" Foreground="White"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="24,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Rozłożenie magazynu:" VerticalAlignment="Top" Height="38" Width="196" FontSize="24" Grid.ColumnSpan="2" Foreground="White"/>
+        <Button Content="Wyloguj się" HorizontalAlignment="Center" Margin="0,139,0,0" Grid.Row="3" VerticalAlignment="Top" Height="41" Width="130" Background="#FFAD5A29" BorderBrush="{x:Null}" Foreground="White" FontSize="16" Click="Wyloguj"/>
+    </Grid>
+</Page>
